@@ -1,764 +1,380 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/_W3R2VwRyF4?feature=shared" target="_blank">
-      <img src="https://github.com/adrianhajdin/social_media_app/assets/151519281/be514a19-3cbb-48b7-9acd-2cf4d2e319c4" alt="Project Banner">
-    </a>
-  <br />
+# 멋쟁이사자처럼 백엔드 스쿨 (3기) - 😎 금성 `(Venus)`
 
-  <div>
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-React_Query-black?style=for-the-badge&logoColor=white&logo=reactquery&color=FF4154" alt="reactquery" />
-    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-  </div>
+## NEWSNS
 
-  <h3 align="center">A Social Media Application</h3>
+## 👨‍👨‍👧‍👦 팀원 소개
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+| <img src='https://github.com/yoon2000.png' width=120> | <img src='https://github.com/Asthux.png' width=120> | <img src='https://github.com/cute-kkiri.png' width=120> | <img src='https://github.com/sky0427.png' width=120> | <img src='https://github.com/seok-young.png' width=120> | <img src='https://github.com/LSH-kw0315.png' width=120> |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 윤현승 | 오상민 | 장혜정 | 윤수근 | 남석영 | 이승헌 |
+| [GitHub](https://github.com/yoon2000) | [GitHub](https://github.com/Asthux) | [GitHub](https://github.com/cute-kkiri) | [GitHub](https://github.com/sky0427) | [GitHub](https://github.com/seok-young) | [GitHub](https://github.com/LSH-kw0315) | 
+
+<br>
+<br>
+
+## 📌 프로젝트 개요
+
+### 프로젝트 주제
+
+뉴스/블로그 검색 엔진
+
+<br>
+
+### 서비스 소개
+
+#### 젊은 세대들을 위한 소셜 뉴스 플랫폼
+
+1. 젊은 세대들에게 더욱 친근한 UI / UX 
+2. 쉽고 빠른 정보 제공
+3. 기존의 뉴스 플랫폼과 소셜 플랫폼 사이의 공신력 있는 정보 제공
+4. 적극적으로 의견을 나눌 수 있는 소통 창구
+
+<br>
+
+#### Q. &nbsp; 국내 언론과 해외 언론의 관점점 차이가 궁금하신가요?
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 국내 기사를 토대로 해외 기사를  찾아와 AI 가 비교 분석해드립니다. 
+
+<br>
+<br>
+
+## 🎥 시연 영상
+
+> 아래 이미지를 클릭하면 시연 영상을 시청할 수 있습니다.
+
+
+<br>
+<br>
+
+## ⚙️ 서비스 아키텍처
+
+> 아키텍처 사진 들어갈 것것
+<div>
+  <!-- Spring Boot -->
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white"/>
+  <!-- Spring Security -->
+  <img src="https://img.shields.io/badge/Spring_Security-339933?style=flat-square&logo=SpringSecurity&logoColor=white"/>
+  
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+<div>
+  <!-- React -->
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/>
+  <!-- TypeScript -->
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
+  <!-- Redux -->
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=black"/>
+</div>
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
+<div>
+  <!-- AWS -->
+  <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat-square&logo=Amazon EC2&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon S3-569A31?style=flat-square&logo=Amazon S3&logoColor=white"/>
+  <!-- GitHub Actions -->
+  <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=flat-square&logo=GitHub Actions&logoColor=white"/>
+</div>
 
-## 🚨 Tutorial
+<div>
+  <!-- PM2 -->
+  <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=Terraform&logoColor=white"/>
+  <!-- MySQL -->
+  <img src="https://img.shields.io/badge/Mysql-4479A1?style=flat-square&logo=Mysql&logoColor=white"/>
+  <!-- Redis -->
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/>
+  <!-- GitHub -->
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+  <!-- Docker -->
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/>
+</div>
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+<br>
+<br>
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/_W3R2VwRyF4?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-Explore social media with this user-friendly platform that has a nice look and lots of features. Easily create and explore posts, and enjoy a strong authentication system and quick data fetching using React Query for a smooth user experience.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- React.js
-- Appwrite
-- React Query
-- TypeScript
-- Shadcn
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
-
-👉 **Authentication System**: A robust authentication system ensuring security and user privacy
-
-👉 **Explore Page**: Homepage for users to explore posts, with a featured section for top creators
-
-👉 **Like and Save Functionality**: Enable users to like and save posts, with dedicated pages for managing liked and saved content
-
-👉 **Detailed Post Page**: A detailed post page displaying content and related posts for an immersive user experience
-
-👉 **Profile Page**: A user profile page showcasing liked posts and providing options to edit the profile
-
-👉 **Browse Other Users**: Allow users to browse and explore other users' profiles and posts
-
-👉 **Create Post Page**: Implement a user-friendly create post page with effortless file management, storage, and drag-drop feature
-
-👉 **Edit Post Functionality**: Provide users with the ability to edit the content of their posts at any time
-
-👉 **Responsive UI with Bottom Bar**: A responsive UI with a bottom bar, enhancing the mobile app feel for seamless navigation
-
-👉 **React Query Integration**: Incorporate the React Query (Tanstack Query) data fetching library for, Auto caching to enhance performance, Parallel queries for efficient data retrieval, First-class Mutations, etc
-
-👉 **Backend as a Service (BaaS) - Appwrite**: Utilize Appwrite as a Backend as a Service solution for streamlined backend development, offering features like authentication, database, file storage, and more
-
-and many more, including code architecture and reusability 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/adrianhajdin/social_media_app.git
-cd social_media_app
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-VITE_APPWRITE_URL=
-VITE_APPWRITE_PROJECT_ID=
-VITE_APPWRITE_DATABASE_ID=
-VITE_APPWRITE_STORAGE_ID=
-VITE_APPWRITE_USER_COLLECTION_ID=
-VITE_APPWRITE_POST_COLLECTION_ID=
-VITE_APPWRITE_SAVES_COLLECTION_ID=
-```
-
-Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the [Appwrite website](https://appwrite.io/).
-
-**Running the Project**
-
-```bash
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="snippets">🕸️ Snippets</a>
+## 👨‍⚖️ 기술적 의사결정
 
 <details>
-<summary><code>constants.index.ts</code></summary>
+  <summary><b>[이미지 스토리지] AWS S3</b></summary>
+  <div markdown="1">
+    </br>
+    <ul>
+      <li>도입배경</li>
+        <ul>
+          <li>유저수, 서비스 사용량 증가 등에 따라 저장하는 사진 파일이 많아지면 스토리지 공간을 확장해야 한다. 그렇기 때문에 서비스의 확장성을 고려해 스토리지 공간이 필요한 만큼 동적으로 할당해 효율적으로 사진을 관리할 수 있는 클라우드 기반의 객체 스토리지 서비스가 필요하였다.</li>
+        </ul>
+      </br>
+      <li>기술비교</li>
+        <table width="70%">
+          <thead>
+            <tr>
+              <th></th>
+              <th>AWS S3</th>
+              <th>Google Cloud Storage</th>
+              <th>Microsoft Azure Blob Storage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>비용</td>
+              <td>저렴한 가격 대비 높은 성능</td>
+              <td>저렴한 가격 대비 높은 성능</td>
+              <td>비교적 높은 가격</td>
+            </tr>
+            <tr>
+              <td>기능성</td>
+              <td>높은 내구성 및 가용성</td>
+              <td>고성능 및 확장성</td>
+              <td>관리 작업 간소화 기능</td>
+            </tr>
+            <tr>
+              <td>보안성</td>
+              <td>액세스 제어, 객체 수준 암호화 및 다양한 암호화 방식 제공</td>
+              <td>액세스 제어, 객체 수준 암호화 및 다양한 암호화 방식 제공</td>
+              <td>액세스 제어, 객체 수준 암호화 및 다양한 암호화 방식 제공</td>
+            </tr>
+            <tr>
+              <td>데이터 복제</td>
+              <td>지리적으로 분산된 데이터 복제 가능</td>
+              <td>지리적으로 분산된 데이터 복제 가능</td>
+              <td>지리적으로 분산된 데이터 복제 가능</td>
+            </tr>
+            <tr>
+              <td>사용 편의성</td>
+              <td>AWS Management Console, CLI, SDK 등 다양한 도구를 사용한 구성 및 관리 가능</td>
+              <td>RESTful API 및 CLI를 사용하여 쉽게 구성 및 관리 가능</td>
+              <td>Azure Portal, PowerShell, CLI 등 다양한 도구를 사용하여 구성 및 관리 가능</td>
+            </tr>
+          </tbody>
+        </table>
+        </br>
+        <ul>
+          <li>AWS S3</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>저렴한 비용으로 매우 빠르고 안정적인 전송 속도와 데이터 신뢰성을 제공한다.</li>
+                  <li>다양한 객체 타입을 지원하여 많은 종류의 데이터를 저장할 수 있다.</li>
+                  <li>지리적으로 분산 된 데이터 복제 기능을 제공하여 데이터 손실을 방지한다.</li>
+                  <li>AWS Management Console, CLI, SDK를 사용하여 구성 및 관리가 가능하다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>트래픽이 너무 많을 경우 비용이 높을 수 있다.</li>
+                </ul>
+            </ul>
+          </br>
+          <li>Google Cloud Storage</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>매우 빠르고 안정적인 전송 속도와 데이터 신뢰성을 제공한다.</li>
+                  <li>저렴한 가격에 높은 성능을 제공한다.</li>
+                  <li>지리적으로 분산 된 데이터 복제 기능을 제공하여 데이터 손실을 방지한다.</li>
+                  <li>RESTful API와 CLI를 사용하여 쉽게 구성 및 관리할 수 있다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>AWS S3와 비교해 객체 타입 지원 범위가 제한적이다.</li>
+                </ul>
+            </ul>
+          </br>
+          <li>Microsoft Azure Blob Storage</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>관리 작업을 간소화하는 기능을 제공해서 관리 작업을 자동화할 수 있다.</li>
+                  <li>암호화, 로그 기록 및 액세스 제어 등 다양한 보안 기능을 제공한다.</li>
+                  <li>Azure Portal, PowerShell, CLI를 사용하여 구성 및 관리가 가능하다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>비교적으로 높은 가격으로 서비스를 제공한다.</li>
+                </ul>
+            </ul>
+        </ul>
+      </br>
+      <li>최종결정</li>
+        <ul>
+          <li>S3, Google Cloud Storage, Microsoft Azure Blob Storage 세 가지 클라우드 스토리지 서비스는 성능, 기능 및 보안 측면에서 찰칵 프로젝트에 적용할 때에 큰 차이가 없다.</li>
+          <li>찰칵 프로젝트는 AWS의 RDS, EC2, CloudFront와 같은 다양한 서비스를 사용하고 있어 비용 관리 측면에서 효율적으로 할 수 있고, 사용자 친화적인 API와 SDK를 제공하여 접근성이 높으며 상세하고 이해하기 쉽게 정리된 문서를 통해서 신속하게 필요한 정보를 찾고 문제를 해결할 수 있다는 점에서 S3를 선택하였다.</li>
+        </ul>
+    </ul>
+    </br>
+  </div>
+</details>
+ 
+<br>
 
-```typescript
-export const sidebarLinks = [
-  {
-    imgURL: "/assets/icons/home.svg",
-    route: "/",
-    label: "Home",
-  },
-  {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
-  },
-  {
-    imgURL: "/assets/icons/people.svg",
-    route: "/all-users",
-    label: "People",
-  },
-  {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
-  {
-    imgURL: "/assets/icons/gallery-add.svg",
-    route: "/create-post",
-    label: "Create Post",
-  },
-];
+<details>
+  <summary><b>[CI/CD] GitHub Actions</b></summary>
+  <div markdown="1">
+    </br>
+    <ul>
+      <li>도입배경</li>
+        <ul>
+          <li>직접 테스트 코드를 실행하고 수동으로 배포를 하는 번거로움이 있었다. 개발 외에 소요되는 시간을 단축하고자 해당 과정을 자동화하기 위해 도입했다.</li>
+        </ul>
+      </br>
+      <li>기술비교</li>
+        <table width="70%">
+          <thead>
+            <tr>
+              <th></th>
+              <th>GitHub Actions</th>
+              <th>Jenkins</th>
+              <th>Travis CI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>설치 및 설정</td>
+              <td>GitHub 저장소 내 워크플로우 파일 작성으로 간단히 설정 가능</td>
+              <td>별도의 서버와 플러그인 설치 필요</td>
+              <td>GitHub 저장소와 연동하여 간단히 설정 가능</td>
+            </tr>
+            <tr>
+              <td>비용</td>
+              <td>무료 티어 범위(월별 2000분) 초과 시 유료</td>
+              <td>서버 유지 비용 발생</td>
+              <td>공개 저장소는 무료<br>비공개 저장소는 유료</td>
+            </tr>
+            <tr>
+              <td>트리거 설정</td>
+              <td>매우 유연</td>
+              <td>매우 유연</td>
+              <td>유연</td>
+            </tr>
+            <tr>
+              <td>지속적 통합</td>
+              <td>지원</td>
+              <td>지원</td>
+              <td>지원</td>
+            </tr>
+            <tr>
+              <td>지속적 배포</td>
+              <td>지원</td>
+              <td>지원</td>
+              <td>지원</td>
+            </tr>
+            <tr>
+              <td>테스트 병렬화</td>
+              <td>지원</td>
+              <td>지원</td>
+              <td>지원</td>
+            </tr>
+            <tr>
+              <td>사용 언어</td>
+              <td>YAML</td>
+              <td>Java</td>
+              <td>Ruby</td>
+            </tr>
+          </tbody>
+        </table>
+        </br>
+        <ul>
+          <li>GitHub Actions</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>실행을 트리거하는 방법으로 다양한 이벤트를 지원해 매우 유연한 트리거 설정이 가능하다.</li>
+                  <li>일정 범위 내 무료로 이용이 가능하다.</li>
+                  <li>GitHub와 연동이 원활하다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>특정 플러그인 및 확장이 부족하다.</li>
+                  <li>다른 CI/CD 툴에 비해 사용자가 설정할 수 있는 옵션의 범위가 적다.</li>
+                  <li>상대적으로 새로운 기술이기 때문에 자료가 부족하고 커뮤니티가 작다.</li>
+                </ul>
+            </ul>
+          </br>
+          <li>Jenkins</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>다양한 플러그인과 인터페이스를 지원한다.</li>
+                  <li>1700개가 넘는 플러그인으로 폭이 넓은 사용자 설정을 할 수 있다.</li>
+                  <li>매우 넓은 커뮤니티를 가지고 있어 자료 검색에 용이하다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>설정이 쉽지 않다.</li>
+                  <li>보안 및 안정성 이슈가 발생할 수 있다.</li>
+                  <li>대규모 프로젝트에서 많은 자원을 소비하고, 설정이 잘못되면 빌드가 느려질 수 있다.</li>
+                </ul>
+            </ul>
+          </br>
+          <li>Travis CI</li>
+            <ul>
+              <li>장점</li>
+                <ul>
+                  <li>설정이 간단하여 사용자가 쉽게 세팅할 수 있다.</li>
+                  <li>단순한 빌드 프로세스에 적합하다.</li>
+                  <li>커스텀 빌드 환경을 지원한다.</li>
+                </ul>
+              <li>단점</li>
+                <ul>
+                  <li>복잡한 빌드 파이프라인을 구성하기에는 상대적으로 제한적이다.</li>
+                </ul>
+            </ul>
+        </ul>
+      </br>
+      <li>최종결정</li>
+        <ul>
+          <li>GitHub Actions는 GitHub에서 제공하는 서버리스 CI/CD 서버이기 때문에 Jenkins, Travis CI와 달리 호스팅이 따로 필요 없다. 그렇기 때문에 CI/CD 파이프라인을 실행하는 비용이 크게 감소한다.</li>
+          <li>찰칵 프로젝트는 Git 원격 저장소를 GitHub로 사용하고 있어서 GitHub와의 연동이 매우 원활한 데다가 무료로 이용할 수 있으며 접근성이 좋은 GitHub Actions를 이용해 CI/CD를 도입하는 것으로 결정했다.</li>
+        </ul>
+    </ul>
+  </br>
+  </div>
+</details>
 
-export const bottombarLinks = [
-  {
-    imgURL: "/assets/icons/home.svg",
-    route: "/",
-    label: "Home",
-  },
-  {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
-  },
-  {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
-  {
-    imgURL: "/assets/icons/gallery-add.svg",
-    route: "/create-post",
-    label: "Create",
-  },
-];
-```
+<br>
+<br>
 
+
+## 🗂 프로젝트 구조
+
+> 디렉토리 구조 들어갈 것
+
+<br>
+<br>
+
+## 🛠 설계
+
+<details>
+  <summary><b>ERD</b></summary>
+  <div markdown="1">
+    <ul>
+      <div></div>
+    </ul>
+  </div>
 </details>
 
 <details>
-<summary><code>globals.css</code></summary>
-
-```css
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  * {
-    @apply box-border list-none p-0 m-0 scroll-smooth;
-  }
-
-  body {
-    @apply bg-dark-1 text-white min-h-screen font-inter;
-  }
-}
-
-@layer utilities {
-  /* TYPOGRAPHY */
-  .h1-bold {
-    @apply text-[36px] font-bold leading-[140%] tracking-tighter;
-  }
-
-  .h1-semibold {
-    @apply text-[36px] font-semibold leading-[140%] tracking-tighter;
-  }
-
-  .h2-bold {
-    @apply text-[30px] font-bold leading-[140%] tracking-tighter;
-  }
-
-  .h3-bold {
-    @apply text-[24px] font-bold leading-[140%] tracking-tighter;
-  }
-
-  .base-semibold {
-    @apply text-[16px] font-semibold leading-[140%] tracking-tighter;
-  }
-
-  .base-medium {
-    @apply text-[16px] font-medium leading-[140%];
-  }
-
-  .base-regular {
-    @apply text-[16px] font-normal leading-[140%];
-  }
-
-  .body-bold {
-    @apply text-[18px] font-bold leading-[140%];
-  }
-
-  .body-medium {
-    @apply text-[18px] font-medium leading-[140%];
-  }
-
-  .small-semibold {
-    @apply text-[14px] font-semibold leading-[140%] tracking-tighter;
-  }
-
-  .small-medium {
-    @apply text-[14px] font-medium leading-[140%];
-  }
-
-  .small-regular {
-    @apply text-[14px] font-normal leading-[140%];
-  }
-
-  .subtle-semibold {
-    @apply text-[12px] font-semibold leading-[140%];
-  }
-
-  .tiny-medium {
-    @apply text-[10px] font-medium leading-[140%];
-  }
-
-  /* UTILITIES */
-  .invert-white {
-    @apply invert brightness-0 transition;
-  }
-
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-
-  .flex-start {
-    @apply flex justify-start items-center;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
-    border-radius: 2px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #09090a;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #5c5c7b;
-    border-radius: 50px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #7878a3;
-  }
-
-  .common-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
-  }
-
-  /* All Users */
-  .user-container {
-    @apply max-w-5xl flex flex-col items-start w-full gap-6 md:gap-9;
-  }
-
-  .user-grid {
-    @apply w-full grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-7 max-w-5xl;
-  }
-
-  /* Explore */
-  .explore-container {
-    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
-  }
-
-  .explore-inner_container {
-    @apply max-w-5xl flex flex-col items-center w-full gap-6 md:gap-9;
-  }
-
-  .explore-search {
-    @apply h-12 bg-dark-4 border-none placeholder:text-light-4 focus-visible:ring-0 focus-visible:ring-offset-0 ring-offset-0 !important;
-  }
-
-  /* Home */
-  .home-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
-  }
-
-  .home-posts {
-    @apply max-w-screen-sm flex flex-col items-center w-full gap-6 md:gap-9;
-  }
-
-  .home-creators {
-    @apply hidden xl:flex flex-col w-72 2xl:w-465 px-6 py-10 gap-10  overflow-scroll custom-scrollbar;
-  }
-
-  /* Post Details */
-  .post_details-container {
-    @apply flex flex-col flex-1 gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar items-center;
-  }
-
-  .post_details-card {
-    @apply bg-dark-2 w-full max-w-5xl rounded-[30px] flex-col flex xl:flex-row border border-dark-4 xl:rounded-l-[24px];
-  }
-
-  .post_details-img {
-    @apply h-80 lg:h-[480px] xl:w-[48%] rounded-t-[30px] xl:rounded-l-[24px] xl:rounded-tr-none object-cover p-5 bg-dark-1;
-  }
-
-  .post_details-info {
-    @apply bg-dark-2 flex flex-col gap-5 lg:gap-7 flex-1 items-start p-8 rounded-[30px];
-  }
-
-  .post_details-delete_btn {
-    @apply p-0 flex gap-3 hover:bg-transparent hover:text-light-1  text-light-1 small-medium lg:base-medium;
-  }
-
-  /* Profile */
-  .profile-container {
-    @apply flex flex-col items-center flex-1 gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
-  }
-
-  .profile-inner_container {
-    @apply flex items-center md:mb-8 xl:items-start gap-8 flex-col xl:flex-row relative max-w-5xl w-full;
-  }
-
-  .profile-tab {
-    @apply flex-center gap-3 py-4 w-48 bg-dark-2  transition flex-1 xl:flex-initial;
-  }
-
-  /* Saved */
-  .saved-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
-  }
-
-  /* Bottom bar */
-  .bottom-bar {
-    @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-dark-2 px-5 py-4 md:hidden;
-  }
-
-  /* File uploader */
-  .file_uploader-img {
-    @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top;
-  }
-
-  .file_uploader-label {
-    @apply text-light-4 text-center small-regular w-full p-4 border-t border-t-dark-4;
-  }
-
-  .file_uploader-box {
-    @apply flex-center flex-col p-7 h-80 lg:h-[612px];
-  }
-
-  /* Grid Post List */
-  .grid-container {
-    @apply w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7 max-w-5xl;
-  }
-
-  .grid-post_link {
-    @apply flex rounded-[24px] border border-dark-4 overflow-hidden cursor-pointer w-full h-full;
-  }
-
-  .grid-post_user {
-    @apply absolute bottom-0 p-5 flex-between w-full bg-gradient-to-t from-dark-3 to-transparent rounded-b-[24px] gap-2;
-  }
-
-  /* Left sidebar */
-  .leftsidebar {
-    @apply hidden md:flex px-6 py-10 flex-col justify-between min-w-[270px] bg-dark-2;
-  }
-
-  .leftsidebar-link {
-    @apply rounded-lg base-medium hover:bg-primary-500 transition;
-  }
-
-  /* Post Card */
-  .post-card {
-    @apply bg-dark-2 rounded-3xl border border-dark-4 p-5 lg:p-7 w-full max-w-screen-sm;
-  }
-
-  .post-card_img {
-    @apply h-64 xs:h-[400px] lg:h-[450px] w-full rounded-[24px] object-cover mb-5;
-  }
-
-  /* Topbar */
-  .topbar {
-    @apply sticky top-0 z-50 md:hidden bg-dark-2 w-full;
-  }
-
-  /* User card */
-  .user-card {
-    @apply flex-center flex-col gap-4 border border-dark-4 rounded-[20px] px-5 py-8;
-  }
-}
-
-@layer components {
-  /* SHADCN COMPONENTS */
-  /* Form */
-  .shad-form_label {
-    @apply text-white !important;
-  }
-
-  .shad-form_message {
-    @apply text-red !important;
-  }
-
-  .shad-input {
-    @apply h-12 bg-dark-4 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
-  }
-
-  .shad-textarea {
-    @apply h-36 bg-dark-3 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
-  }
-
-  /* Button */
-  .shad-button_primary {
-    @apply bg-primary-500 hover:bg-primary-500 text-light-1 flex gap-2 !important;
-  }
-
-  .shad-button_dark_4 {
-    @apply h-12 bg-dark-4 px-5 text-light-1 flex gap-2 !important;
-  }
-
-  .shad-button_ghost {
-    @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
-  }
-}
-```
-
+  <summary><b>API</b></summary>
+  <div markdown="1">
+    <ul>
+      <div></div>
+    </ul>
+  </div>
 </details>
 
+<br>
+<br>
 
-<details>
-<summary><code>queryKeys.ts</code></summary>
+## 🕵️‍♂️ 트러블슈팅
 
-```typescript
-export enum QUERY_KEYS {
-  // AUTH KEYS
-  CREATE_USER_ACCOUNT = "createUserAccount",
+> 트러블슈팅 하나씩 채워 나갈 것것
 
-  // USER KEYS
-  GET_CURRENT_USER = "getCurrentUser",
-  GET_USERS = "getUsers",
-  GET_USER_BY_ID = "getUserById",
+<br>
+<br>
 
-  // POST KEYS
-  GET_POSTS = "getPosts",
-  GET_INFINITE_POSTS = "getInfinitePosts",
-  GET_RECENT_POSTS = "getRecentPosts",
-  GET_POST_BY_ID = "getPostById",
-  GET_USER_POSTS = "getUserPosts",
-  GET_FILE_PREVIEW = "getFilePreview",
+## 😭 이번 프로젝트에서 보완해야 할 점
 
-  //  SEARCH KEYS
-  SEARCH_POSTS = "getSearchPosts",
-}
-```
+<br>
+<br>
 
-</details>
+## 🤭 이번 프로젝트를 하며 새롭게 배운 것
 
-<details>
-<summary><code>tailwind.config.js</code></summary>
-
-```javascript
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-
-module.exports = {
-  darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      
-      },
-    },
-    extend: {
-      colors: {
-        'primary-500': '#877EFF',
-        'primary-600': '#5D5FEF',
-        'secondary-500': '#FFB620',
-        'off-white': '#D0DFFF',
-        'red': '#FF5A5A',
-        'dark-1': '#000000',
-        'dark-2': '#09090A',
-        'dark-3': '#101012',
-        'dark-4': '#1F1F22',
-        'light-1': '#FFFFFF',
-        'light-2': '#EFEFEF',
-        'light-3': '#7878A3',
-        'light-4': '#5C5C7B',
-      },
-      screens: {
-        'xs': '480px',
-      
-      },
-      width: {
-        '420': '420px',
-        '465': '465px',
-      },
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: 0 },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: 0 },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-      },
-    },
-  },
-  plugins: [require('tailwindcss-animate')],
-};
-```
-
-</details>
-
-<details>
-<summary><code>types.index.ts</code></summary>
-
-```typescript
-export type INavLink = {
-  imgURL: string;
-  route: string;
-  label: string;
-};
-
-export type IUpdateUser = {
-  userId: string;
-  name: string;
-  bio: string;
-  imageId: string;
-  imageUrl: URL | string;
-  file: File[];
-};
-
-export type INewPost = {
-  userId: string;
-  caption: string;
-  file: File[];
-  location?: string;
-  tags?: string;
-};
-
-export type IUpdatePost = {
-  postId: string;
-  caption: string;
-  imageId: string;
-  imageUrl: URL;
-  file: File[];
-  location?: string;
-  tags?: string;
-};
-
-export type IUser = {
-  id: string;
-  name: string;
-  username: string;
-  email: string;
-  imageUrl: string;
-  bio: string;
-};
-
-export type INewUser = {
-  name: string;
-  email: string;
-  username: string;
-  password: string;
-};
-```
-
-</details>
-
-<details>
-<summary><code>useDebounce.ts</code></summary>
-
-```typescript
-import { useEffect, useState } from "react";
-
-// https://codesandbox.io/s/react-query-debounce-ted8o?file=/src/useDebounce.js
-export default function useDebounce<T>(value: T, delay: number): T {
-  // State and setters for debounced value
-  const [debouncedValue, setDebouncedValue] = useState<T>(value);
-
-  useEffect(() => {
-    // Update debounced value after delay
-    const handler = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    // Cancel the timeout if value changes (also on delay change or unmount)
-    // This is how we prevent debounced value from updating if value is changed ...
-    // .. within the delay period. Timeout gets cleared and restarted.
-    return () => {
-      clearTimeout(handler);
-    };
-  }, [value, delay]); // Only re-call effect if value or delay changes
-
-  return debouncedValue;
-}
-```
-
-</details>
-
-<details>
-<summary><code>utils.ts</code></summary>
-
-```typescript
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
-export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
-
-export function formatDateString(dateString: string) {
-  const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  };
-
-  const date = new Date(dateString);
-  const formattedDate = date.toLocaleDateString("en-US", options);
-
-  const time = date.toLocaleTimeString([], {
-    hour: "numeric",
-    minute: "2-digit",
-  });
-
-  return `${formattedDate} at ${time}`;
-}
-
-// 
-export const multiFormatDateString = (timestamp: string = ""): string => {
-  const timestampNum = Math.round(new Date(timestamp).getTime() / 1000);
-  const date: Date = new Date(timestampNum * 1000);
-  const now: Date = new Date();
-
-  const diff: number = now.getTime() - date.getTime();
-  const diffInSeconds: number = diff / 1000;
-  const diffInMinutes: number = diffInSeconds / 60;
-  const diffInHours: number = diffInMinutes / 60;
-  const diffInDays: number = diffInHours / 24;
-
-  switch (true) {
-    case Math.floor(diffInDays) >= 30:
-      return formatDateString(timestamp);
-    case Math.floor(diffInDays) === 1:
-      return `${Math.floor(diffInDays)} day ago`;
-    case Math.floor(diffInDays) > 1 && diffInDays < 30:
-      return `${Math.floor(diffInDays)} days ago`;
-    case Math.floor(diffInHours) >= 1:
-      return `${Math.floor(diffInHours)} hours ago`;
-    case Math.floor(diffInMinutes) >= 1:
-      return `${Math.floor(diffInMinutes)} minutes ago`;
-    default:
-      return "Just now";
-  }
-};
-
-export const checkIsLiked = (likeList: string[], userId: string) => {
-  return likeList.includes(userId);
-};
-```
-
-</details>
-
-## <a name="links">🔗 Links</a>
-
-Assets used in the project are [here](https://drive.google.com/file/d/13_7FofRAC3wARqPtAVPi53QNJJRd5RH_/view?usp=sharing)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+<br>
+<br>
