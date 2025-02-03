@@ -33,9 +33,11 @@ const PostForm = ({ post, action }: PostFormProps) => {
   const form = useForm<z.infer<typeof PostValidation>>({
     resolver: zodResolver(PostValidation),
     defaultValues: {
+      title: post ? post?.title : "",
       caption: post ? post?.caption : "",
       file: [],
       location: post ? post.location : "",
+      originalUrl: post ? post.originalUrl : "",
       tags: post ? post.tags.join(",") : "",
     },
   });
@@ -86,10 +88,27 @@ const PostForm = ({ post, action }: PostFormProps) => {
         className="flex flex-col gap-9 w-full  max-w-5xl">
         <FormField
           control={form.control}
+          name="title"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="shad-form_label">Title</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Title"
+                  type="text"
+                  className="shad-input"
+                  {...field}
+                />
+              </FormControl>
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
           name="caption"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="shad-form_label">Caption</FormLabel>
+              <FormLabel className="shad-form_label">Content</FormLabel>
               <FormControl>
                 <Textarea
                   className="shad-textarea custom-scrollbar"
@@ -123,7 +142,21 @@ const PostForm = ({ post, action }: PostFormProps) => {
           name="location"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="shad-form_label">Add Location</FormLabel>
+              <FormLabel className="shad-form_label">Publisher</FormLabel>
+              <FormControl>
+                <Input type="text" className="shad-input" {...field} />
+              </FormControl>
+              <FormMessage className="shad-form_message" />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="originalUrl"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="shad-form_label">Original URL</FormLabel>
               <FormControl>
                 <Input type="text" className="shad-input" {...field} />
               </FormControl>

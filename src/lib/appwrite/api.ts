@@ -141,10 +141,12 @@ export async function createPost(post: INewPost) {
       appwriteConfig.postCollectionId,
       ID.unique(),
       {
+        title: post.title,
         creator: post.userId,
         caption: post.caption,
         imageUrl: fileUrl,
         imageId: uploadedFile.$id,
+        original: post.originalUrl,
         location: post.location,
         tags: tags,
       }
@@ -299,9 +301,11 @@ export async function updatePost(post: IUpdatePost) {
       appwriteConfig.postCollectionId,
       post.postId,
       {
+        title: post.title,
         caption: post.caption,
         imageUrl: image.imageUrl,
         imageId: image.imageId,
+        original: post.originalUrl,
         location: post.location,
         tags: tags,
       }
