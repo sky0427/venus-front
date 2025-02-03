@@ -1,7 +1,5 @@
 # 멋쟁이사자처럼 백엔드 스쿨 (3기) - 😎 금성 `(Venus)`
 
-## NEWSNS
-
 ## 👨‍👨‍👧‍👦 팀원 소개
 
 | <img src='https://github.com/yoon2000.png' width=120> | <img src='https://github.com/Asthux.png' width=120> | <img src='https://github.com/cute-kkiri.png' width=120> | <img src='https://github.com/sky0427.png' width=120> | <img src='https://github.com/seok-young.png' width=120> | <img src='https://github.com/LSH-kw0315.png' width=120> |
@@ -20,7 +18,7 @@
 
 <br>
 
-### 서비스 소개
+### 😎 NEWSNS 서비스 소개
 
 #### 젊은 세대들을 위한 소셜 뉴스 플랫폼
 
@@ -28,12 +26,6 @@
 2. 쉽고 빠른 정보 제공
 3. 기존의 뉴스 플랫폼과 소셜 플랫폼 사이의 공신력 있는 정보 제공
 4. 적극적으로 의견을 나눌 수 있는 소통 창구
-
-<br>
-
-#### Q. &nbsp; 국내 언론과 해외 언론의 관점점 차이가 궁금하신가요?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 국내 기사를 토대로 해외 기사를  찾아와 AI 가 비교 분석해드립니다. 
 
 <br>
 <br>
