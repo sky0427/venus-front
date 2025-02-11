@@ -9,7 +9,7 @@ export const INITIAL_USER = {
   nickname: "",
   role: "",
   profileUrl: "",
-  email:""
+  email: "",
 };
 
 const INITIAL_STATE = {
@@ -19,7 +19,6 @@ const INITIAL_STATE = {
   setUser: () => {},
   setIsAuthenticated: () => {},
   checkAuthUser: async () => false as boolean,
-  logout: () => false as boolean
 };
 
 type IContextType = {
@@ -29,7 +28,6 @@ type IContextType = {
   isAuthenticated: boolean;
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
   checkAuthUser: () => Promise<boolean>;
-  logout: () => boolean;
 };
 
 const AuthContext = createContext<IContextType>(INITIAL_STATE);
@@ -39,17 +37,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<IUser>(INITIAL_USER);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
-  const logout = () => {
-    try{
-      setUser(INITIAL_USER);
-      setIsAuthenticated(false);
-      return true;
-    }catch(error){
-      console.error(error)
-      return false;
-    }
-  }
 
   const checkAuthUser = async () => {
     setIsLoading(true);
@@ -98,7 +85,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     isAuthenticated,
     setIsAuthenticated,
     checkAuthUser,
-    logout
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

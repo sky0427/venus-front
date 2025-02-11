@@ -12,7 +12,7 @@ import { useUserContext } from "@/context/AuthContext";
 export async function createUserAccount(user: INewUser) {
   try {
     const response = await axiosInstance.post("/v1/member/signup", user);
-    if (response.status !== 200) throw Error;
+    if (response.status >= 400) throw Error;
 
     return response.data; // 서버에서 반환한 데이터
   } catch (error) {
@@ -21,40 +21,53 @@ export async function createUserAccount(user: INewUser) {
   }
 }
 
-
 // ============================== SIGN IN
 export async function signInAccount(user: { email: string; password: string }) {
   try {
     const response = await axiosInstance.post("/v1/member/login", user);
-    console.log(response);
-    if (response.status >= 400){
+    if (response.status >= 400) {
       return false;
     }
     return true;
-
   } catch (error) {
     console.log(error);
-    console.log("예외가 발생")
+    console.log("예외가 발생");
     return false;
   }
 }
 
-
 // ============================== GET USER
 export async function getCurrentUser() {
   try {
-    let response = await axiosInstance.get("v1/member/auth");
-    
-    if(response.status >= 500) throw Error;
-
-    if (response.status >= 400){
-        const refreshResp=await axiosInstance.get("/v1/member/refresh");
-        if(refreshResp.status >= 400) throw Error;
-        return getCurrentUser();
+    const value = document.cookie;
+    const parts = value.split(";");
+    let accessToken;
+    for (let cookie of parts) {
+      cookie = cookie.trim();
+      const [key, value] = cookie.split("=");
+      if (key === "accessToken") {
+        console.log(value);
+        accessToken = value;
+        break;
+      }
     }
-    
+
+    let response = await axiosInstance.get("v1/member/auth", {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+
+    if (response.status >= 500) throw Error;
+
+    if (response.status >= 400) {
+      const refreshResp = await axiosInstance.get("/v1/member/refresh");
+      if (refreshResp.status >= 400) throw Error;
+      return getCurrentUser();
+    }
+
     const currentUser = response.data;
-    
+
     if (!currentUser) throw Error;
 
     return currentUser;
@@ -67,7 +80,7 @@ export async function getCurrentUser() {
 // ============================== SIGN OUT
 export async function signOutAccount() {
   try {
-    const session = await axiosInstance.post("/v1/member/logout")
+    const session = await axiosInstance.post("/v1/member/logout");
     return session;
   } catch (error) {
     console.log(error);
