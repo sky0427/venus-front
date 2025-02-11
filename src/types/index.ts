@@ -45,8 +45,7 @@ export type IUser = {
 };
 
 export type INewUser = {
-  name: string;
+  nickname: string;
   email: string;
-  username: string;
   password: string;
 };

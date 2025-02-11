@@ -3,38 +3,49 @@ import { ID, Query } from "appwrite";
 import { appwriteConfig, account, databases, storage, avatars } from "./config";
 import { IUpdatePost, INewPost, INewUser, IUpdateUser } from "@/types";
 
+import axiosInstance from "../axios";
+
 // ============================================================
 // AUTH
 // ============================================================
 
 // ============================== SIGN UP
-export async function createUserAccount(user: INewUser) {
+export const createUserAccount = async (user: INewUser) => {
   try {
-    const newAccount = await account.create(
-      ID.unique(),
-      user.email,
-      user.password,
-      user.name
-    );
-
-    if (!newAccount) throw Error;
-
-    const avatarUrl = avatars.getInitials(user.name);
-
-    const newUser = await saveUserToDB({
-      accountId: newAccount.$id,
-      name: newAccount.name,
-      email: newAccount.email,
-      username: user.username,
-      imageUrl: avatarUrl,
-    });
-
-    return newUser;
+    const response = await axiosInstance.post("/v1/member/signup", user);
+    return response.data; // 서버에서 반환한 데이터
   } catch (error) {
-    console.log(error);
-    return error;
+    console.error("Sign up error:", error);
+    throw error; // 에러를 다시 던져서 상위 컴포넌트에서 처리할 수 있도록 함
   }
-}
+};
+// export async function createUserAccount(user: INewUser) {
+//   try {
+//     const newAccount = await account.create(
+//       ID.unique(),
+//       user.email,
+//       user.password,
+//       user.name
+//     );
+
+//     if (!newAccount) throw Error;
+
+//     const avatarUrl = avatars.getInitials(user.name);
+
+//     const newUser = await saveUserToDB({
+//       accountId: newAccount.$id,
+//       name: newAccount.name,
+//       email: newAccount.email,
+//       username: user.username,
+//       imageUrl: avatarUrl,
+//     });
+
+//     return newUser;
+//   } catch (error) {
+//     console.log(error);
+//     return error;
+//   }
+// }
 
 // ============================== SAVE USER TO DB
 export async function saveUserToDB(user: {
@@ -59,15 +70,29 @@ export async function saveUserToDB(user: {
 }
 
 // ============================== SIGN IN
-export async function signInAccount(user: { email: string; password: string }) {
+export const signInAccount = async (user: {
+  email: string;
+  password: string;
+}) => {
   try {
-    const session = await account.createEmailSession(user.email, user.password);
-
-    return session;
+    // 로그인 정보를 백엔드에 전송
+    const response = await axiosInstance.post("/v1/member/login", user);
+    return response.data; // 서버에서 반환한 데이터 (예: session 정보)
   } catch (error) {
-    console.log(error);
+    console.error("Sign in error:", error);
+    throw error; // 에러를 다시 던져서 상위 컴포넌트에서 처리할 수 있도록 함
   }
-}
+};
+
+// export async function signInAccount(user: { email: string; password: string }) {
+//   try {
+//     const session = await account.createEmailSession(user.email, user.password);
+
+//     return session;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 // ============================== GET ACCOUNT
 export async function getAccount() {
@@ -433,19 +458,38 @@ export async function getUserPosts(userId?: string) {
 // ============================== GET POPULAR POSTS (BY HIGHEST LIKE COUNT)
 export async function getRecentPosts() {
   try {
-    const posts = await databases.listDocuments(
-      appwriteConfig.databaseId,
-      appwriteConfig.postCollectionId,
-      [Query.orderDesc("$createdAt"), Query.limit(20)]
-    );
+    // 백엔드로 GET 요청을 보내서 최신 게시물 목록을 받음
+    const response = await axiosInstance.get("/v1/reposts", {
+      params: {
+        limit: 20, // 페이지 크기 (선택사항)
+        order: "desc", // 정렬 기준 (선택사항)
+      },
+    });
 
-    if (!posts) throw Error;
+    if (!response || !response.data) throw new Error("No data found");
 
-    return posts;
+    return response.data; // 서버에서 반환한 데이터 반환
   } catch (error) {
-    console.log(error);
+    console.error("Error fetching recent posts:", error);
+    throw error; // 에러를 다시 던져서 상위 컴포넌트에서 처리할 수 있도록 함
   }
 }
+
+// export async function getRecentPosts() {
+//   try {
+//     const posts = await databases.listDocuments(
+//       appwriteConfig.databaseId,
+//       appwriteConfig.postCollectionId,
+//       [Query.orderDesc("$createdAt"), Query.limit(20)]
+//     );
+
+//     if (!posts) throw Error;
+
+//     return posts;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 // ============================================================
 // USER
