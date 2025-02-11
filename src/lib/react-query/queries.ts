@@ -28,6 +28,23 @@ import {
 } from "@/lib/appwrite/api";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 
+import axiosInstance from "../axios";
+
+// 회원가입 요청 함수
+const signup = async (user: {
+  nickname: string;
+  email: string;
+  password: string;
+}) => {
+  const response = await axiosInstance.post("/v1/member/signup", user);
+  return response.data;
+};
+
+// useSignup 훅
+export const useSignup = () => {
+  return useMutation(signup);
+};
+
 // ============================================================
 // AUTH QUERIES
 // ============================================================

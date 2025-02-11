@@ -30,9 +30,9 @@ const SigninForm = () => {
   });
 
   const handleSignin = async (user: z.infer<typeof SigninValidation>) => {
-    const session = await signInAccount(user);
-
-    if (!session) {
+    let isSucess = await signInAccount(user);
+    console.log(isSucess);
+    if (!isSucess) {
       toast({ title: "Login failed. Please try again." });
       
       return;

@@ -6,11 +6,10 @@ import { getCurrentUser } from "@/lib/appwrite/api";
 
 export const INITIAL_USER = {
   id: "",
-  name: "",
-  username: "",
-  email: "",
-  imageUrl: "",
-  bio: "",
+  nickname: "",
+  role: "",
+  profileUrl: "",
+  email:""
 };
 
 const INITIAL_STATE = {
@@ -20,6 +19,7 @@ const INITIAL_STATE = {
   setUser: () => {},
   setIsAuthenticated: () => {},
   checkAuthUser: async () => false as boolean,
+  logout: () => false as boolean
 };
 
 type IContextType = {
@@ -29,6 +29,7 @@ type IContextType = {
   isAuthenticated: boolean;
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
   checkAuthUser: () => Promise<boolean>;
+  logout: () => boolean;
 };
 
 const AuthContext = createContext<IContextType>(INITIAL_STATE);
@@ -39,27 +40,38 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const logout = () => {
+    try{
+      setUser(INITIAL_USER);
+      setIsAuthenticated(false);
+      return true;
+    }catch(error){
+      console.error(error)
+      return false;
+    }
+  }
+
   const checkAuthUser = async () => {
     setIsLoading(true);
     try {
       const currentAccount = await getCurrentUser();
       if (currentAccount) {
         setUser({
-          id: currentAccount.$id,
-          name: currentAccount.name,
-          username: currentAccount.username,
+          id: currentAccount.id,
+          nickname: currentAccount.nickname,
           email: currentAccount.email,
-          imageUrl: currentAccount.imageUrl,
-          bio: currentAccount.bio,
+          profileUrl: currentAccount.imageUrl,
+          role: currentAccount.role,
         });
         setIsAuthenticated(true);
 
         return true;
       }
-
+      setIsAuthenticated(false);
       return false;
     } catch (error) {
       console.error(error);
+      setIsAuthenticated(false);
       return false;
     } finally {
       setIsLoading(false);
@@ -86,6 +98,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     isAuthenticated,
     setIsAuthenticated,
     checkAuthUser,
+    logout
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

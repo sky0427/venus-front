@@ -4,6 +4,7 @@ import { useUserContext } from "@/context/AuthContext";
 
 export default function AuthLayout() {
   const { isAuthenticated } = useUserContext();
+  //const isAuthenticated = false;
 
   return (
     <>
