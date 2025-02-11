@@ -28,7 +28,7 @@ import {
 } from "@/lib/appwrite/api";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 
-import axiosInstance from "../axios";
+import axiosInstance from "../axios";
 
 // 회원가입 요청 함수
 const signup = async (user: {
