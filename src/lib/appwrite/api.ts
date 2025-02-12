@@ -36,6 +36,10 @@ export async function signInAccount(user: { email: string; password: string }) {
   }
 }
 
+export async function socialLogin() {
+  window.location.href = "http://localhost:8080/oauth2/authorization/kakao";
+}
+
 // ============================== GET USER
 export async function getCurrentUser() {
   try {

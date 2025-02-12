@@ -3,7 +3,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from "react-router-dom";
 
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Loader from "@/components/shared/Loader";
@@ -12,6 +19,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { SigninValidation } from "@/lib/validation";
 import { useSignInAccount } from "@/lib/react-query/queries";
 import { useUserContext } from "@/context/AuthContext";
+import { socialLogin } from "@/lib/appwrite/api";
 
 const SigninForm = () => {
   const { toast } = useToast();
@@ -34,7 +42,7 @@ const SigninForm = () => {
     console.log(isSucess);
     if (!isSucess) {
       toast({ title: "Login failed. Please try again." });
-      
+
       return;
     }
 
@@ -45,8 +53,8 @@ const SigninForm = () => {
 
       navigate("/");
     } else {
-      toast({ title: "Login failed. Please try again.", });
-      
+      toast({ title: "Login failed. Please try again." });
+
       return;
     }
   };
@@ -102,6 +110,8 @@ const SigninForm = () => {
               "Log in"
             )}
           </Button>
+
+          <button onClick={socialLogin}>소셜로그인</button>
 
           <p className="text-small-regular text-light-2 text-center mt-2">
             Don&apos;t have an account?

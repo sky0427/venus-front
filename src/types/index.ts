@@ -38,8 +38,8 @@ export type IUpdatePost = {
 export type IUser = {
   id: string;
   nickname: string;
-  email: string;
   profileUrl: string;
+  email: string;
   role: string;
 };
 
